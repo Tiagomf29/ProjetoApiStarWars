@@ -1,12 +1,13 @@
 var cliqueImagem = 1;
 
     window.onload = function(){
-        endpointRecurso    = new EndpointConsultaRecurso();
-        endpointPersonagem = new EndpointPersonagem();
-        endpointFilme      = new EndPointFilmes();
-        endpointNave       = new EndPointNaves();
-        endpointVeiculo    = new EndPointVeiculos();
-        endPointEspecie    = new EndPointEspecies();
+        endpointRecurso      = new EndpointConsultaRecurso();
+        endpointPersonagem   = new EndpointPersonagem();
+        endpointFilme        = new EndPointFilmes();
+        endpointPlaneta      = new EndPointPlanetas();
+        endpointVeiculo      = new EndPointVeiculos();
+        endPointEspecie      = new EndPointEspecies();
+        endPointNaveEstrelar = new EndPointNavesEstrelares();
         eventoProximaImagem();
         eventoLinks();        
 
@@ -35,15 +36,18 @@ var cliqueImagem = 1;
             case "consultaFilmes": 
                  endpointFilme.consultaFilmes();
                  break; 
-            case "consultaNaves": 
-                 endpointNave.consultaNaves();
+            case "consultaPlanetas": 
+                  endpointPlaneta.consultaPlanetas();
                  break;     
             case "consultaveiculos": 
                  endpointVeiculo.consultaVeiculos();
                  break;   
             case "consultaEspecies": 
                  endPointEspecie.consultaEspecies();
-                 break;                                                                                 
+                 break;      
+            case "consultaNaves": 
+                 endPointNaveEstrelar.consultaNavesEstrelares();
+                 break;                                                                                              
         
             default:
                 break;
