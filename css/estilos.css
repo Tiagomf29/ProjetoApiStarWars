@@ -2,7 +2,8 @@
 #cabecalho{
     text-align: center;
     height: 100PX;
-    color: white;  
+    color: white; 
+    font-size: 25px; 
 }
 hr{
     width: 30%;
@@ -67,11 +68,13 @@ table, tr, td{
     background-color: black;
     color: white;
     font-size: 15px;   
+    border-radius: 5px;
 }
 
 table{
     position: relative;
     display: flexbox;
+    border: none;
 }
 
 #divProximaImg{
