@@ -13,6 +13,7 @@ hr{
     height: 500px;
     color: white;  
     width: 400px;
+
 }
 #corpo{
     float: left;
@@ -22,7 +23,7 @@ hr{
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    display: block;    
+    display: block;  
 }
 
 li{
@@ -37,6 +38,7 @@ ul{
     list-style-image: url(../img/cloud.png);
     list-style-type: disc;
     height: 2px;
+    
 }
 
 a:visited{
@@ -48,7 +50,7 @@ a:link{
 }
 
 body{
-    background-color: black;
+   background-image: url(../img/ceu.jpg);
 }
 
 li:hover{
@@ -64,7 +66,7 @@ table, tr, td{
     border: 1px solid white;
     background-color: black;
     color: white;
-    font-size: 15px;    
+    font-size: 15px;   
 }
 
 table{
@@ -78,4 +80,3 @@ table{
     left: 60px;
     height: 20px;
 }
-

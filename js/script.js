@@ -25,8 +25,8 @@ var cliqueImagem = 1;
     }
 
     function chamaEndpoint(link){
-
-        switch (link) {
+        IncluirNomeNaves(""); 
+        switch (link) {            
             case "consultaTodos": 
                  endpointRecurso.consultaRecurso();
                  break;
@@ -81,20 +81,32 @@ var cliqueImagem = 1;
 
         switch (cliqueImagem) {
             case 1:
-                imageNext.style.backgroundImage =  "url('img/nave2.png')";
+                imageNext.style.backgroundImage =  "url('img/cr90.png')";
+                IncluirNomeNaves("CR90 corvette");                
                 cliqueImagem++;                                  
                 break;
             case 2:
-                imageNext.style.backgroundImage =  "url('img/nave3.png')";
+                imageNext.style.backgroundImage =  "url('img/Star Destroyer.png')";
+                IncluirNomeNaves("Star Destroyer"); 
                 cliqueImagem++;                                  
                 break;
             case 3:
-                imageNext.style.backgroundImage =  "url('img/nave4.png')";
+                imageNext.style.backgroundImage =  "url('img/Y-wing.png')";
+                IncluirNomeNaves("Y-wing"); 
                 cliqueImagem++;                                  
                 break;
             case 4:
                 imageNext.style.backgroundImage =  "url('img/nave.png')";
+                IncluirNomeNaves("Millennium Falcon");
                 cliqueImagem = 1;                                  
                 break;                                            
         }
+    }
+
+    function IncluirNomeNaves(texto){
+        $("span").empty();
+        let text = document.createElement("span");
+        text.innerHTML = texto;
+        let vlr =  document.querySelector("#corpo").appendChild(text).style.color="white";
+        $("span").css("font-size","60px").css("position","relative").css("top","460px").css("font-family","Calibri");
     }
