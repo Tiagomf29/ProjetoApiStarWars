@@ -1,0 +1,81 @@
+
+#cabecalho{
+    text-align: center;
+    height: 100PX;
+    color: white;  
+}
+hr{
+    width: 30%;
+    color: white;  
+}
+#menu{
+    float: left;
+    height: 500px;
+    color: white;  
+    width: 400px;
+}
+#corpo{
+    float: left;
+    height: 500px;
+    width: 55%;
+    background-image: url(../img/nave4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: block;    
+}
+
+li{
+    font-size: 20px;
+    height: 35px; 
+    color: white;
+    position: relative; 
+    top: 10px;  
+}
+
+ul{
+    list-style-image: url(../img/cloud.png);
+    list-style-type: disc;
+    height: 2px;
+}
+
+a:visited{
+    color: white;     
+}
+a:link{
+    color: white;  
+    text-decoration: none;    
+}
+
+body{
+    background-color: black;
+}
+
+li:hover{
+    font-weight: bolder; 
+}
+
+#imgProxima{
+    position: relative;
+    top: 420px;
+}
+
+table, tr, td{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 15px;    
+}
+
+table{
+    position: relative;
+    display: flexbox;
+}
+
+#divProximaImg{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    height: 20px;
+}
+
